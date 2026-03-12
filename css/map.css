@@ -6,20 +6,21 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 2.5px solid rgba(255,255,255,0.95);
-  box-shadow: 0 1px 5px rgba(0,0,0,0.35), 0 0 0 1px rgba(0,0,0,0.08);
+  background: #fff;
+  border: 2.5px solid #4242ea;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25);
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .map-pin:hover {
   transform: scale(1.2);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.4), 0 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .map-pin.is-active {
   transform: scale(1.25);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.45), 0 0 0 3px rgba(255,255,255,0.9);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
 
 .map-pin .pin-icon {
@@ -27,11 +28,7 @@
   line-height: 1;
 }
 
-.map-pin[data-category="savory"]  { background: #4242ea; }
-.map-pin[data-category="sweet"]   { background: #4242ea; }
-.map-pin[data-category="drinks"]  { background: #4242ea; }
-.map-pin[data-category="snack"]   { background: #4242ea; }
-.map-pin[data-category="bonus"]   { background: #C47B0A; }
+.map-pin[data-category="bonus"] { border-color: #C47B0A; }
 
 /* ── Leaflet Popup ─────────────────────────────────── */
 .leaflet-popup-content-wrapper {

@@ -138,7 +138,7 @@ html, body {
   background: var(--color-active-bg);
 }
 
-/* Number badge */
+/* Emoji badge */
 .card-order {
   width: 36px;
   height: 36px;
@@ -149,10 +149,14 @@ html, body {
   font-size: 1.1rem;
   flex-shrink: 0;
   margin-top: 1px;
+  background: #fff;
+  border: 2.5px solid var(--color-primary);
 }
 
+.card-order[data-category="bonus"] { border-color: #C47B0A; }
+
 .place-card.is-active .card-order {
-  filter: drop-shadow(0 0 3px rgba(66, 66, 234, 0.4));
+  box-shadow: 0 0 0 3px rgba(66, 66, 234, 0.15);
 }
 
 .card-body { flex: 1; min-width: 0; }
