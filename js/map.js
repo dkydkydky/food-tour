@@ -116,4 +116,4 @@ function openPlace(id, scrollToCard = true, flyToPin = true) {
 window.openPlace = openPlace;
 
 // Remeasure after layout settles (fixes blank map on mobile)
-window.addEventListener('load', () => map.invalidateSize());
+setTimeout(() => map.invalidateSize(), 100);

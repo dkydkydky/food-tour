@@ -248,9 +248,9 @@ html, body {
   }
 
   #map {
+    flex: none; /* prevent flex: 1 from collapsing height to 0 */
     height: 50vh;
     width: 100%;
-    flex-shrink: 0;
     order: -1; /* map above list on mobile */
   }
 
