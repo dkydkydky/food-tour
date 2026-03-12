@@ -114,3 +114,6 @@ function openPlace(id, scrollToCard = true, flyToPin = true) {
 
 // Expose globally for popup onclick
 window.openPlace = openPlace;
+
+// Remeasure after layout settles (fixes blank map on mobile)
+window.addEventListener('load', () => map.invalidateSize());
