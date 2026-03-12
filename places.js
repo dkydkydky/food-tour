@@ -1,18 +1,17 @@
 const PLACES = [
   {
-    id: 7,
+    id: 4,
     order: 1,
-    name: "Ihawan",
-    tagline: "Filipino BBQ and the smell of charcoal in Woodside",
-    description: "A Woodside institution for Filipino grilled meats — pork belly, chicken inasal, and longanisa all cooked over live charcoal. The room is loud and warm, the rice is piled high, and the sawsawan dipping sauces are made in-house.",
-    cuisine: "Filipino",
-    address: "40-06 70th St, Woodside, Queens, NY 11377",
-    coordinates: [40.74617, -73.89549],
-    category: "savory",
-    mustTry: "Pork belly BBQ",
-    priceRange: "$$",
-    hours: "Wed–Mon 11am–10pm",
-    photo: "https://images.getbento.com/accounts/bd80d00f58702f8e2ae0ca229715e58d/media/images/37855ihawanbbq.jpg"
+    name: "Bolivian Llama Party",
+    tagline: "Bolivian street food done with serious flair",
+    description: "Born at the Queens Night Market, Bolivian Llama Party brought salteñas — flaky, juice-filled Bolivian hand pies — to the mainstream. The fillings rotate but the quality never dips. A true Queens success story.",
+    cuisine: "Bolivian",
+    address: "44-14 48th Ave, Sunnyside, Queens, NY 11377",
+    coordinates: [40.73930, -73.92077],
+    category: "snack",
+    mustTry: "Salteñas",
+    priceRange: "$",
+    photo: "https://images.ctfassets.net/1aemqu6a6t65/4X7TtXV68rQ52O5TaL9rcR/d7099aab9266d72a2479babe7d7a37f8/Bolivian-Llama-Party-Sunnyside-Queens-NYC-Photo-VincentTullo-255.jpg?w=1200&h=800&q=75"
   },
   {
     id: 1,
@@ -32,18 +31,19 @@ const PLACES = [
     photo: "https://sripraphai.com/images/sripraphai-plate.jpg"
   },
   {
-    id: 4,
+    id: 7,
     order: 3,
-    name: "Bolivian Llama Party",
-    tagline: "Bolivian street food done with serious flair",
-    description: "Born at the Queens Night Market, Bolivian Llama Party brought salteñas — flaky, juice-filled Bolivian hand pies — to the mainstream. The fillings rotate but the quality never dips. A true Queens success story.",
-    cuisine: "Bolivian",
-    address: "44-14 48th Ave, Sunnyside, Queens, NY 11377",
-    coordinates: [40.73930, -73.92077],
-    category: "snack",
-    mustTry: "Salteñas",
-    priceRange: "$",
-    photo: "https://images.ctfassets.net/1aemqu6a6t65/4X7TtXV68rQ52O5TaL9rcR/d7099aab9266d72a2479babe7d7a37f8/Bolivian-Llama-Party-Sunnyside-Queens-NYC-Photo-VincentTullo-255.jpg?w=1200&h=800&q=75"
+    name: "Ihawan",
+    tagline: "Filipino BBQ and the smell of charcoal in Woodside",
+    description: "A Woodside institution for Filipino grilled meats — pork belly, chicken inasal, and longanisa all cooked over live charcoal. The room is loud and warm, the rice is piled high, and the sawsawan dipping sauces are made in-house.",
+    cuisine: "Filipino",
+    address: "40-06 70th St, Woodside, Queens, NY 11377",
+    coordinates: [40.74617, -73.89549],
+    category: "savory",
+    mustTry: "Pork belly BBQ",
+    priceRange: "$$",
+    hours: "Wed–Mon 11am–10pm",
+    photo: "https://images.getbento.com/accounts/bd80d00f58702f8e2ae0ca229715e58d/media/images/37855ihawanbbq.jpg"
   },
   {
     id: 2,
@@ -118,8 +118,36 @@ const PLACES = [
     photo: "https://thesciencesurvey.com/wp-content/uploads/2024/11/0-1200x900.jpeg"
   },
   {
-    id: 3,
+    id: 12,
     order: 9,
+    name: "Mountain House Flushing",
+    tagline: "Bold Sichuan and Hunan flavors in the heart of Flushing",
+    description: "Mountain House brings the fiery, numbing heat of Sichuan cooking to a Flushing dining room that fills up fast. The dry-pot dishes and cold appetizers are standouts, and the spice levels are taken seriously.",
+    cuisine: "Chinese (Sichuan)",
+    address: "39-16 Prince St, Ste G03, Flushing, Queens, NY 11354",
+    coordinates: [40.75920, -73.83260],
+    category: "savory",
+    mustTry: "Dry-pot dishes",
+    priceRange: "$$",
+    photo: "https://cdn.vox-cdn.com/uploads/chorus_image/image/73339273/SzechuanMountainHouse_Interior_7108_SELECT.0.jpg"
+  },
+  {
+    id: 15,
+    order: 10,
+    name: "Nan Xiang Xiao Long Bao",
+    tagline: "Flushing's gold standard for soup dumplings",
+    description: "The name most locals cite when you ask where to get xiao long bao in Flushing. The soup dumplings are delicate, generously filled, and arrive in bamboo steamers with a pool of hot broth inside each one. Bite carefully, dip in ginger-vinegar, repeat.",
+    cuisine: "Chinese (Shanghainese)",
+    address: "39-16 Prince St, Flushing, Queens, NY 11354",
+    coordinates: [40.75928, -73.83260],
+    category: "savory",
+    mustTry: "Pork xiao long bao",
+    priceRange: "$$",
+    hours: "Daily 11am–10pm"
+  },
+  {
+    id: 3,
+    order: 11,
     name: "White Bear",
     tagline: "Cult-favorite wontons in Flushing's back streets",
     description: "A postage-stamp takeout counter in Flushing with an almost mythical reputation. The menu is barely a dozen items but everyone comes for one thing: the #6, pork and chive wontons tossed in a fiery, numbing chili oil. Cash only, arrive early.",
@@ -133,23 +161,8 @@ const PLACES = [
     photo: "https://res.cloudinary.com/the-infatuation/image/upload/q_auto,f_auto/images/NYC_WhiteBear_WontonWHotSauce_KatePrevite_00002_qjo8by"
   },
   {
-    id: 8,
-    order: 10,
-    name: "New World Mall Food Court",
-    tagline: "A whole world of Chinese regional food underground",
-    description: "Descend into the basement of Flushing's New World Mall and you're in one of the most exciting food courts in the country. Stalls serve hand-pulled noodles, scallion pancakes, stinky tofu, bubble tea, and obscure regional Chinese dishes you won't find anywhere else in the city.",
-    cuisine: "Chinese (regional)",
-    address: "136-20 Roosevelt Ave, Flushing, Queens, NY 11354",
-    coordinates: [40.75934, -73.82916],
-    category: "savory",
-    mustTry: "Hand-pulled noodles",
-    priceRange: "$",
-    hours: "Daily 10am–10pm",
-    photo: "https://thatbestbite.com/wp-content/uploads/2013/11/08.jpg"
-  },
-  {
     id: 11,
-    order: 11,
+    order: 12,
     name: "Handmade Dumpling",
     tagline: "No-frills Flushing dumplings, made fresh all day",
     description: "A tiny counter in Flushing's dumpling corridor where the dough is rolled and filled by hand in plain sight. The pork and cabbage dumplings are juicy and cheap, and the turnover is so fast they're always fresh off the pan.",
@@ -159,20 +172,6 @@ const PLACES = [
     category: "savory",
     mustTry: "Pan-fried pork dumplings",
     priceRange: "$"
-  },
-  {
-    id: 12,
-    order: 12,
-    name: "Mountain House Flushing",
-    tagline: "Bold Sichuan and Hunan flavors in the heart of Flushing",
-    description: "Mountain House brings the fiery, numbing heat of Sichuan cooking to a Flushing dining room that fills up fast. The dry-pot dishes and cold appetizers are standouts, and the spice levels are taken seriously.",
-    cuisine: "Chinese (Sichuan)",
-    address: "39-16 Prince St, Ste G03, Flushing, Queens, NY 11354",
-    coordinates: [40.75920, -73.83260],
-    category: "savory",
-    mustTry: "Dry-pot dishes",
-    priceRange: "$$",
-    photo: "https://cdn.vox-cdn.com/uploads/chorus_image/image/73339273/SzechuanMountainHouse_Interior_7108_SELECT.0.jpg"
   },
   {
     id: 13,
@@ -203,18 +202,19 @@ const PLACES = [
     photo: "https://media.timeout.com/images/105501168/750/422/image.jpg"
   },
   {
-    id: 15,
+    id: 8,
     order: 15,
-    name: "Nan Xiang Xiao Long Bao",
-    tagline: "Flushing's gold standard for soup dumplings",
-    description: "The name most locals cite when you ask where to get xiao long bao in Flushing. The soup dumplings are delicate, generously filled, and arrive in bamboo steamers with a pool of hot broth inside each one. Bite carefully, dip in ginger-vinegar, repeat.",
-    cuisine: "Chinese (Shanghainese)",
-    address: "39-16 Prince St, Flushing, Queens, NY 11354",
-    coordinates: [40.75928, -73.83260],
+    name: "New World Mall Food Court",
+    tagline: "A whole world of Chinese regional food underground",
+    description: "Descend into the basement of Flushing's New World Mall and you're in one of the most exciting food courts in the country. Stalls serve hand-pulled noodles, scallion pancakes, stinky tofu, bubble tea, and obscure regional Chinese dishes you won't find anywhere else in the city.",
+    cuisine: "Chinese (regional)",
+    address: "136-20 Roosevelt Ave, Flushing, Queens, NY 11354",
+    coordinates: [40.75934, -73.82916],
     category: "savory",
-    mustTry: "Pork xiao long bao",
-    priceRange: "$$",
-    hours: "Daily 11am–10pm"
+    mustTry: "Hand-pulled noodles",
+    priceRange: "$",
+    hours: "Daily 10am–10pm",
+    photo: "https://thatbestbite.com/wp-content/uploads/2013/11/08.jpg"
   },
   {
     id: 10,
