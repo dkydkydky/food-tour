@@ -19,11 +19,11 @@ function createPinIcon(place) {
   return L.divIcon({
     className: '',  // suppress default leaflet styles
     html: `<div class="map-pin" data-category="${place.category}" id="pin-${place.id}">
-             <span class="pin-number">${place.order}</span>
+             <span class="pin-icon">${place.icon}</span>
            </div>`,
-    iconSize: [32, 32],
-    iconAnchor: [16, 32],
-    popupAnchor: [0, -34]
+    iconSize: [36, 36],
+    iconAnchor: [18, 36],
+    popupAnchor: [0, -38]
   });
 }
 

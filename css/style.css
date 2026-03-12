@@ -140,17 +140,15 @@ html, body {
 
 /* Number badge */
 .card-order {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 0.75rem;
-  color: #fff;
+  font-size: 1.1rem;
   flex-shrink: 0;
-  margin-top: 3px;
+  margin-top: 1px;
 }
 
 .card-order[data-category="savory"]  { background: var(--pin-savory); }

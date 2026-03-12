@@ -24,7 +24,7 @@ sorted.forEach(place => {
     : `<div class="card-photo-placeholder" data-category="${place.category}"></div>`;
 
   card.innerHTML = `
-    <div class="card-order" data-category="${place.category}">${place.order}</div>
+    <div class="card-order" data-category="${place.category}">${place.icon}</div>
     <div class="card-body">
       <div class="card-name">${place.name}</div>
       <div class="card-meta">

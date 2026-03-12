@@ -2,6 +2,7 @@ const PLACES = [
   {
     id: 4,
     order: 1,
+    icon: "🫔",
     name: "Bolivian Llama Party",
     tagline: "Bolivian street food done with serious flair",
     description: "Born at the Queens Night Market, Bolivian Llama Party brought salteñas — flaky, juice-filled Bolivian hand pies — to the mainstream. The fillings rotate but the quality never dips. A true Queens success story.",
@@ -16,6 +17,7 @@ const PLACES = [
   {
     id: 1,
     order: 2,
+    icon: "🍜",
     name: "Sripraphai Thai Restaurant",
     tagline: "Queens' most beloved Thai kitchen",
     description: "A Queens institution since 1990, Sripraphai serves fiercely authentic Thai food that draws devotees from across the city. The green papaya salad and crispy watercress salad are legendary, and the curries hit with genuine heat.",
@@ -33,6 +35,7 @@ const PLACES = [
   {
     id: 7,
     order: 3,
+    icon: "🍖",
     name: "Ihawan",
     tagline: "Filipino BBQ and the smell of charcoal in Woodside",
     description: "A Woodside institution for Filipino grilled meats — pork belly, chicken inasal, and longanisa all cooked over live charcoal. The room is loud and warm, the rice is piled high, and the sawsawan dipping sauces are made in-house.",
@@ -48,6 +51,7 @@ const PLACES = [
   {
     id: 2,
     order: 4,
+    icon: "🥟",
     name: "Phayul",
     tagline: "Jackson Heights' go-to Tibetan kitchen",
     description: "A warm, no-frills Tibetan restaurant above the Roosevelt Ave bustle that's beloved by the neighborhood's Tibetan community and adventurous eaters alike. The momos are handmade and generously filled, and the thukpa noodle soup is deeply comforting.",
@@ -63,6 +67,7 @@ const PLACES = [
   {
     id: 5,
     order: 5,
+    icon: "🍛",
     name: "Angel of Harlem / Angel Indian",
     tagline: "Deep, spice-forward Indian cooking in Jackson Heights",
     description: "Jackson Heights is one of the best places in the world to eat Indian food, and this spot holds its own among serious competition. Expect bold curries, freshly made bread, and a room full of regulars who know exactly what they're ordering.",
@@ -77,6 +82,7 @@ const PLACES = [
   {
     id: 6,
     order: 6,
+    icon: "🌮",
     name: "Birria-Landia",
     tagline: "The taco truck that made birria a New York obsession",
     description: "What started as a humble taco truck in Jackson Heights sparked a city-wide birria craze. The tacos are stuffed with slow-braised beef, crisped on the griddle, and served with a rich consomé for dipping. Get there early — they sell out.",
@@ -91,6 +97,7 @@ const PLACES = [
   {
     id: 16,
     order: 7,
+    icon: "🌽",
     name: "The Arepa Lady",
     tagline: "The legendary street cart that became a Queens institution",
     description: "Maria Piedad Cano spent decades working a charcoal cart on Roosevelt Ave before her sons helped her open a proper restaurant. The arepas — crispy outside, soft and cheesy within — are as good as they ever were. The chorizos and empanadas are not to be missed either.",
@@ -105,6 +112,7 @@ const PLACES = [
   {
     id: 9,
     order: 8,
+    icon: "🍋",
     name: "Benfaremo — The Lemon Ice King of Corona",
     tagline: "A Queens legend, one scoop at a time since 1944",
     description: "Standing at the corner of 108th Street since 1944, the Lemon Ice King is as much a Queens landmark as it is a dessert shop. The lemon ice is bracingly tart and ice-cold, made from a recipe that hasn't changed in 80 years. The line wraps around the block on hot days — join it.",
@@ -120,6 +128,7 @@ const PLACES = [
   {
     id: 12,
     order: 9,
+    icon: "🌶️",
     name: "Mountain House Flushing",
     tagline: "Bold Sichuan and Hunan flavors in the heart of Flushing",
     description: "Mountain House brings the fiery, numbing heat of Sichuan cooking to a Flushing dining room that fills up fast. The dry-pot dishes and cold appetizers are standouts, and the spice levels are taken seriously.",
@@ -134,6 +143,7 @@ const PLACES = [
   {
     id: 15,
     order: 10,
+    icon: "🥟",
     name: "Nan Xiang Xiao Long Bao",
     tagline: "Flushing's gold standard for soup dumplings",
     description: "The name most locals cite when you ask where to get xiao long bao in Flushing. The soup dumplings are delicate, generously filled, and arrive in bamboo steamers with a pool of hot broth inside each one. Bite carefully, dip in ginger-vinegar, repeat.",
@@ -148,6 +158,7 @@ const PLACES = [
   {
     id: 3,
     order: 11,
+    icon: "🔥",
     name: "White Bear",
     tagline: "Cult-favorite wontons in Flushing's back streets",
     description: "A postage-stamp takeout counter in Flushing with an almost mythical reputation. The menu is barely a dozen items but everyone comes for one thing: the #6, pork and chive wontons tossed in a fiery, numbing chili oil. Cash only, arrive early.",
@@ -163,6 +174,7 @@ const PLACES = [
   {
     id: 11,
     order: 12,
+    icon: "🥟",
     name: "Handmade Dumpling",
     tagline: "No-frills Flushing dumplings, made fresh all day",
     description: "A tiny counter in Flushing's dumpling corridor where the dough is rolled and filled by hand in plain sight. The pork and cabbage dumplings are juicy and cheap, and the turnover is so fast they're always fresh off the pan.",
@@ -176,6 +188,7 @@ const PLACES = [
   {
     id: 13,
     order: 13,
+    icon: "🫘",
     name: "Soy Bean Chen Flower",
     tagline: "Silky tofu flower from a Flushing institution",
     description: "A beloved Flushing counter that's been ladling out douhua — silky, just-set tofu flower — for years. You choose sweet (ginger syrup) or savory (soy sauce, scallion, dried shrimp), and both are deeply comforting. An essential stop for anyone eating their way through Flushing.",
@@ -190,6 +203,7 @@ const PLACES = [
   {
     id: 14,
     order: 14,
+    icon: "🍚",
     name: "Joe's Steam Rice Roll",
     tagline: "Silky cheung fun made to order in Flushing",
     description: "Joe's turns out some of the best cheung fun outside of Hong Kong — translucent rice noodle sheets steamed to order, stuffed with shrimp, beef, or char siu, and finished with a sweet soy drizzle. The texture is impossibly smooth. Get multiple orders.",
@@ -204,6 +218,7 @@ const PLACES = [
   {
     id: 8,
     order: 15,
+    icon: "🏮",
     name: "New World Mall Food Court",
     tagline: "A whole world of Chinese regional food underground",
     description: "Descend into the basement of Flushing's New World Mall and you're in one of the most exciting food courts in the country. Stalls serve hand-pulled noodles, scallion pancakes, stinky tofu, bubble tea, and obscure regional Chinese dishes you won't find anywhere else in the city.",
@@ -219,6 +234,7 @@ const PLACES = [
   {
     id: 10,
     order: 16,
+    icon: "🍺",
     name: "Bohemian Hall & Beer Garden",
     tagline: "NYC's oldest beer garden, still going strong in Astoria",
     description: "Open since 1910, Bohemian Hall is the last surviving Czech beer garden in New York City. The sprawling outdoor garden fits hundreds under the trees, with pitchers of Czech lager, hearty Eastern European food, and a genuine neighborhood-party atmosphere that's impossible to fake.",
