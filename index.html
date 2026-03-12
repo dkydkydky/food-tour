@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Tour — Queens, NYC</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Outfit ≈ Galano Grotesque (headings), Inter ≈ Graphik (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="site-title">🍜 Food Tour</h1>
+    <span class="site-subtitle">Queens, New York City</span>
+  </header>
+
+  <main class="app-layout">
+    <div id="place-list" class="place-list">
+      <div class="list-intro">
+        <span class="stop-count" id="stop-count"></span>
+        <h2>Queens Food Tour</h2>
+        <p>A curated crawl through the most exciting eating in Queens, NYC.</p>
+      </div>
+    </div>
+    <div id="map"></div>
+  </main>
+
+  <!-- Load order matters: places first, then Leaflet, then app scripts -->
+  <script src="places.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/ui.js"></script>
+
+</body>
+</html>

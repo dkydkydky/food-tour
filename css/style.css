@@ -1,0 +1,272 @@
+/* ── CSS Variables ─────────────────────────────────── */
+:root {
+  --color-primary:   #4242ea;
+  --color-secondary: #6868ef;
+  --color-accent:    #9494f5;
+  --color-bg:        #ffffff;
+  --color-sidebar-bg: #ffffff;
+  --color-text:      #111111;
+  --color-muted:     #888888;
+  --color-border:    #e8e8e8;
+  --color-active-bg: #f5f9ff;
+  --color-active-num: #4242ea;
+
+  --pin-savory:  #4242ea;
+  --pin-sweet:   #4242ea;
+  --pin-drinks:  #4242ea;
+  --pin-snack:   #4242ea;
+
+  --sidebar-width: 380px;
+  --header-height: 52px;
+}
+
+/* ── Reset & Base ──────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  font-family: 'Graphik', 'Inter', system-ui, sans-serif;
+  font-size: 15px;
+  color: var(--color-text);
+  background: var(--color-bg);
+  overflow: hidden; /* no page scroll — sidebar + map each scroll internally */
+}
+
+/* ── Header ────────────────────────────────────────── */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: var(--header-height);
+  z-index: 1000;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  gap: 10px;
+}
+
+.site-title {
+  font-family: 'Galano Grotesque', 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.site-subtitle {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+  padding-left: 10px;
+  border-left: 1px solid var(--color-border);
+}
+
+/* ── App Layout ────────────────────────────────────── */
+.app-layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* ── Sidebar / Place List ──────────────────────────── */
+.place-list {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: var(--header-height);
+  border-right: 1px solid var(--color-border);
+  background: var(--color-sidebar-bg);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* intro blurb area */
+.list-intro {
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.list-intro h2 {
+  font-family: 'Galano Grotesque', 'Outfit', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.list-intro p {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+/* stop count badge */
+.stop-count {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+/* ── Place Item (flat list, no card boxes) ─────────── */
+.place-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: background 0.15s ease;
+  scroll-margin-top: var(--header-height);
+  text-decoration: none;
+  color: inherit;
+}
+
+.place-card:hover {
+  background: #fafafa;
+}
+
+.place-card.is-active {
+  background: var(--color-active-bg);
+}
+
+/* Number badge */
+.card-order {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #fff;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.card-order[data-category="savory"]  { background: var(--pin-savory); }
+.card-order[data-category="sweet"]   { background: var(--pin-sweet); }
+.card-order[data-category="drinks"]  { background: var(--pin-drinks); }
+.card-order[data-category="snack"]   { background: var(--pin-snack); }
+
+.place-card.is-active .card-order {
+  box-shadow: 0 0 0 3px rgba(66, 66, 234, 0.2);
+}
+
+.card-body { flex: 1; min-width: 0; }
+
+.card-name {
+  font-family: 'Galano Grotesque', 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+.card-meta {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.card-meta .price {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.card-tagline {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.45;
+  margin-bottom: 4px;
+}
+
+.card-must-try {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin-top: 4px;
+}
+
+.card-must-try strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Photo */
+.card-photo {
+  width: 68px;
+  height: 68px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.card-photo-placeholder {
+  width: 68px;
+  height: 68px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  opacity: 0.75;
+}
+
+.card-photo-placeholder[data-category="savory"],
+.card-photo-placeholder[data-category="sweet"],
+.card-photo-placeholder[data-category="drinks"],
+.card-photo-placeholder[data-category="snack"]  { background: linear-gradient(135deg, #4242ea, #9494f5); }
+
+/* ── Map ───────────────────────────────────────────── */
+#map {
+  flex: 1;
+  height: 100vh;
+  z-index: 0;
+}
+
+/* ── Mobile: stack vertically ──────────────────────── */
+@media (max-width: 767px) {
+  html, body { overflow: auto; }
+
+  .site-header {
+    width: 100%;
+    position: sticky;
+  }
+
+  .app-layout {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #map {
+    height: 50vh;
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  .place-list {
+    width: 100%;
+    height: auto;
+    overflow-y: visible;
+    padding-top: 0;
+  }
+}
+
+/* ── Animations ────────────────────────────────────── */
+@keyframes cardPulse {
+  0%   { background: rgba(66, 66, 234, 0.12); }
+  100% { background: var(--color-active-bg); }
+}
+
+.place-card.pulse {
+  animation: cardPulse 0.4s ease-out forwards;
+}
