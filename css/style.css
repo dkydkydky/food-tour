@@ -151,14 +151,8 @@ html, body {
   margin-top: 1px;
 }
 
-.card-order[data-category="savory"]  { background: var(--pin-savory); }
-.card-order[data-category="sweet"]   { background: var(--pin-sweet); }
-.card-order[data-category="drinks"]  { background: var(--pin-drinks); }
-.card-order[data-category="snack"]   { background: var(--pin-snack); }
-.card-order[data-category="bonus"]   { background: var(--pin-bonus); }
-
 .place-card.is-active .card-order {
-  box-shadow: 0 0 0 3px rgba(66, 66, 234, 0.2);
+  filter: drop-shadow(0 0 3px rgba(66, 66, 234, 0.4));
 }
 
 .card-body { flex: 1; min-width: 0; }

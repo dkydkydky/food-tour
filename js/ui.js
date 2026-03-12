@@ -32,7 +32,7 @@ sorted.forEach(place => {
         <span class="price"> · ${place.priceRange}</span>
         ${place.hours ? ` · ${place.hours}` : ''}
       </div>
-      <div class="card-tagline">${place.tagline}</div>
+      <div class="card-tagline">${place.description}</div>
       ${place.mustTry ? `<div class="card-must-try"><strong>Must try:</strong> ${place.mustTry}</div>` : ''}
     </div>
     ${photoHTML}
