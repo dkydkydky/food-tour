@@ -55,6 +55,34 @@ function makePlaceholder(category) {
 }
 window.makePlaceholder = makePlaceholder;
 
+// ── Mobile scroll sync ──────────────────────────────
+if (window.matchMedia('(max-width: 767px)').matches) {
+  let scrollTid = null;
+  let lastSyncedId = null;
+
+  window.addEventListener('scroll', () => {
+    clearTimeout(scrollTid);
+    scrollTid = setTimeout(() => {
+      const mapEl = document.getElementById('map');
+      const headerEl = document.querySelector('.site-header');
+      const topOffset = (headerEl?.offsetHeight ?? 0) + (mapEl?.offsetHeight ?? 0);
+      const midY = topOffset + (window.innerHeight - topOffset) / 2;
+
+      let best = null, bestDist = Infinity;
+      document.querySelectorAll('.place-card').forEach(card => {
+        const rect = card.getBoundingClientRect();
+        const dist = Math.abs((rect.top + rect.height / 2) - midY);
+        if (dist < bestDist) { bestDist = dist; best = card; }
+      });
+
+      if (best) {
+        const id = parseInt(best.id.replace('place-', ''), 10);
+        if (id !== lastSyncedId) { lastSyncedId = id; panToPlace(id); }
+      }
+    }, 80);
+  });
+}
+
 // ── URL hash deep-link ──────────────────────────────
 function handleHashLink() {
   const match = window.location.hash.match(/^#place-(\d+)$/);

@@ -247,10 +247,13 @@ html, body {
   }
 
   #map {
-    flex: none; /* prevent flex: 1 from collapsing height to 0 */
-    height: 50vh;
+    flex: none;
+    height: 45vh;
     width: 100%;
-    order: -1; /* map above list on mobile */
+    order: -1;
+    position: sticky;
+    top: var(--header-height);
+    z-index: 10;
   }
 
   .place-list {

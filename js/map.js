@@ -115,5 +115,19 @@ function openPlace(id, scrollToCard = true, flyToPin = true) {
 // Expose globally for popup onclick
 window.openPlace = openPlace;
 
+// Lightweight pan used by mobile scroll sync (no popup, no URL update)
+function panToPlace(id) {
+  const place = PLACES.find(p => p.id === id);
+  if (!place) return;
+  map.panTo(place.coordinates, { animate: true, duration: 0.4 });
+  document.querySelectorAll('.map-pin').forEach(el => el.classList.remove('is-active'));
+  const pin = document.getElementById(`pin-${id}`);
+  if (pin) pin.classList.add('is-active');
+  document.querySelectorAll('.place-card').forEach(el => el.classList.remove('is-active'));
+  const card = document.getElementById(`place-${id}`);
+  if (card) card.classList.add('is-active');
+}
+window.panToPlace = panToPlace;
+
 // Remeasure after layout settles (fixes blank map on mobile)
 setTimeout(() => map.invalidateSize(), 100);
