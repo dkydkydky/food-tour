@@ -338,7 +338,7 @@ const PLACES = [
     description: "A tiny counter in Flushing's dumpling corridor where the dough is rolled and filled by hand in plain sight. The pork and cabbage dumplings are juicy and cheap, and the turnover is so fast they're always fresh off the pan.",
     cuisine: "Chinese",
     address: "35-46 Union St, Flushing, Queens, NY 11354",
-    coordinates: [40.75890, -73.83150],
+    coordinates: [40.7642581, -73.8282469],
     category: "savory",
     mustTry: "Pan-fried pork dumplings",
     priceRange: "$"
