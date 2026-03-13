@@ -10,7 +10,7 @@ const PLACES = [
     address: "44-14 48th Ave, Sunnyside, Queens, NY 11377",
     coordinates: [40.73930, -73.92077],
     category: "snack",
-    mustTry: "Salteñas",
+    mustTry: "Salteñas, fried chicken sandwich",
     priceRange: "$",
     photo: "https://images.ctfassets.net/1aemqu6a6t65/4X7TtXV68rQ52O5TaL9rcR/d7099aab9266d72a2479babe7d7a37f8/Bolivian-Llama-Party-Sunnyside-Queens-NYC-Photo-VincentTullo-255.jpg?w=1200&h=800&q=75"
   },
@@ -25,7 +25,7 @@ const PLACES = [
     address: "64-13 39th Ave, Woodside, Queens, NY 11377",
     coordinates: [40.74645, -73.89924],
     category: "savory",
-    mustTry: "Crispy watercress salad",
+    mustTry: "Crispy watercress salad, drunken noodles with beef, curry puffs",
     priceRange: "$$",
     hours: "Thu–Tue 11am–9:30pm (closed Wed)",
     phone: "(718) 899-9599",
@@ -75,7 +75,7 @@ const PLACES = [
     address: "75-18 37th Ave, Jackson Heights, Queens, NY 11372",
     coordinates: [40.74723, -73.89093],
     category: "savory",
-    mustTry: "Lamb curry",
+    mustTry: "Lamb curry, chicken biryani",
     priceRange: "$$",
     photo: "https://culinarybackstreets.s3.us-east-2.amazonaws.com/culinarybackstreets/uploads/cb_queens_angel_dc_final_outside.jpg"
   },
