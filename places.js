@@ -79,8 +79,24 @@ const PLACES = [
     hours: "Daily 10:30am–10pm"
   },
   {
-    id: 2,
+    id: 26,
     order: 6,
+    icon: "🧆",
+    name: "Tong",
+    tagline: "Bangladeshi street snacks on a Jackson Heights corner",
+    description: "What started as a tiny street cart in 2018, Tong brought the flavors of Dhaka's street food scene to Jackson Heights. Fuchka — crispy hollow puri filled with spiced tamarind water — chotpoti, jhaal muri, and pitha are all made to order. It's the kind of snacking that's impossible to stop at just one.",
+    cuisine: "Bangladeshi",
+    address: "37-08 73rd St, Jackson Heights, Queens, NY 11372",
+    coordinates: [40.748524, -73.892850],
+    category: "snack",
+    mustTry: "Fuchka, chotpoti, jhaal muri",
+    priceRange: "$",
+    hours: "Daily 2pm–12am",
+    phone: "(929) 257-6996"
+  },
+  {
+    id: 2,
+    order: 7,
     icon: "🥟",
     name: "Phayul",
     tagline: "Jackson Heights' go-to Tibetan kitchen",
@@ -96,7 +112,7 @@ const PLACES = [
   },
   {
     id: 5,
-    order: 7,
+    order: 8,
     icon: "🍛",
     name: "Angel Indian",
     tagline: "Deep, spice-forward Indian cooking in Jackson Heights",
@@ -111,7 +127,7 @@ const PLACES = [
   },
   {
     id: 23,
-    order: 8,
+    order: 9,
     icon: "🥗",
     name: "Zaab Zaab",
     tagline: "Michelin-listed Isan Thai — fiery, funky, and electric",
@@ -127,7 +143,7 @@ const PLACES = [
   },
   {
     id: 6,
-    order: 9,
+    order: 10,
     icon: "🌮",
     name: "Birria-Landia Food Truck",
     tagline: "The taco truck that made birria a New York obsession",
@@ -142,7 +158,7 @@ const PLACES = [
   },
   {
     id: 16,
-    order: 10,
+    order: 11,
     icon: "🌽",
     name: "The Arepa Lady",
     tagline: "The legendary street cart that became a Queens institution",
@@ -157,7 +173,7 @@ const PLACES = [
   },
   {
     id: 19,
-    order: 11,
+    order: 12,
     icon: "🌿",
     name: "Ayada Thai",
     tagline: "Elmhurst's Thai gem — bold, fragrant, and deeply authentic",
@@ -173,7 +189,7 @@ const PLACES = [
   },
   {
     id: 21,
-    order: 12,
+    order: 13,
     icon: "🐓",
     name: "Eim Khao Mun Kai",
     tagline: "One dish done perfectly — Elmhurst's Thai chicken rice counter",
@@ -189,7 +205,7 @@ const PLACES = [
   },
   {
     id: 20,
-    order: 13,
+    order: 14,
     icon: "🥡",
     name: "Taiwanese Gourmet",
     tagline: "Cash-only Taiwanese street food hiding in plain sight in Elmhurst",
@@ -205,7 +221,7 @@ const PLACES = [
   },
   {
     id: 22,
-    order: 14,
+    order: 15,
     icon: "🦐",
     name: "Mariscos El Submarino",
     tagline: "Fresh Mexican seafood in the heart of Jackson Heights",
@@ -221,7 +237,7 @@ const PLACES = [
   },
   {
     id: 9,
-    order: 15,
+    order: 16,
     icon: "🍋",
     name: "Benfaremo — The Lemon Ice King of Corona",
     tagline: "A Queens legend, one scoop at a time since 1944",
@@ -237,7 +253,7 @@ const PLACES = [
   },
   {
     id: 12,
-    order: 16,
+    order: 17,
     icon: "🌶️",
     name: "Mountain House Flushing",
     tagline: "Bold Sichuan and Hunan flavors in the heart of Flushing",
@@ -252,7 +268,7 @@ const PLACES = [
   },
   {
     id: 15,
-    order: 17,
+    order: 18,
     icon: "🥟",
     name: "Nan Xiang Xiao Long Bao",
     tagline: "Flushing's gold standard for soup dumplings",
@@ -267,7 +283,7 @@ const PLACES = [
   },
   {
     id: 3,
-    order: 18,
+    order: 19,
     icon: "🔥",
     name: "White Bear",
     tagline: "Cult-favorite wontons in Flushing's back streets",
@@ -283,7 +299,7 @@ const PLACES = [
   },
   {
     id: 11,
-    order: 19,
+    order: 20,
     icon: "🥟",
     name: "Handmade Dumpling",
     tagline: "No-frills Flushing dumplings, made fresh all day",
@@ -297,7 +313,7 @@ const PLACES = [
   },
   {
     id: 13,
-    order: 20,
+    order: 21,
     icon: "🫘",
     name: "Soy Bean Chen Flower",
     tagline: "Silky tofu flower from a Flushing institution",
@@ -312,7 +328,7 @@ const PLACES = [
   },
   {
     id: 14,
-    order: 21,
+    order: 22,
     icon: "🍚",
     name: "Joe's Steam Rice Roll",
     tagline: "Silky cheung fun made to order in Flushing",
@@ -327,7 +343,7 @@ const PLACES = [
   },
   {
     id: 8,
-    order: 22,
+    order: 23,
     icon: "🏮",
     name: "New World Mall Food Court",
     tagline: "A whole world of Chinese regional food underground",
@@ -343,7 +359,7 @@ const PLACES = [
   },
   {
     id: 24,
-    order: 23,
+    order: 24,
     icon: "🥢",
     name: "Hahm Ji Bach",
     tagline: "Legendary Korean comfort food, open nearly round the clock",
@@ -359,7 +375,7 @@ const PLACES = [
   },
   {
     id: 25,
-    order: 24,
+    order: 25,
     icon: "🥩",
     name: "Jongro BBQ",
     tagline: "Full Korean BBQ in Flushing's Murray Hill",
@@ -375,7 +391,7 @@ const PLACES = [
   },
   {
     id: 10,
-    order: 25,
+    order: 26,
     icon: "🍺",
     name: "Bohemian Hall & Beer Garden",
     tagline: "NYC's oldest beer garden, still going strong in Astoria",
