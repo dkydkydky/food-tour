@@ -182,7 +182,7 @@ const PLACES = [
     address: "77-08 Woodside Ave, Elmhurst, Queens, NY 11373",
     coordinates: [40.74357, -73.88778],
     category: "savory",
-    mustTry: "Pad see ew, green curry",
+    mustTry: "Pad see ew, green curry, chive dumpling",
     priceRange: "$$",
     hours: "Mon–Fri 11:30am–10pm, Sat–Sun 11am–10pm",
     phone: "(718) 424-0844"
