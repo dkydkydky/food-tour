@@ -136,7 +136,7 @@ const PLACES = [
     address: "76-04 Woodside Ave, Elmhurst, Queens, NY 11373",
     coordinates: [40.74323, -73.88865],
     category: "savory",
-    mustTry: "Larb, green papaya salad, grilled chicken",
+    mustTry: "Larb, green papaya salad, grilled chicken, salt baked fish",
     priceRange: "$$",
     hours: "Mon–Fri 11:30am–3:30pm & 4:30pm–11pm, Sat–Sun 9am–11pm",
     phone: "(631) 526-1664"
@@ -204,8 +204,40 @@ const PLACES = [
     phone: "(718) 424-7156"
   },
   {
-    id: 20,
+    id: 27,
     order: 14,
+    icon: "🥘",
+    name: "La Pequeña Colombia",
+    tagline: "A taste of Colombia's coast in the heart of Jackson Heights",
+    description: "A Jackson Heights institution since the 1970s, La Pequeña Colombia is the neighborhood anchor for Colombian home cooking. Bandeja paisa, sancocho, lechona, and chicharrón are all done with conviction. It's the kind of restaurant where whole families pile in on weekends and the portions are never small.",
+    cuisine: "Colombian",
+    address: "83-27 Roosevelt Ave, Jackson Heights, Queens, NY 11372",
+    coordinates: [40.747894, -73.882190],
+    category: "savory",
+    mustTry: "Bandeja paisa, sancocho",
+    priceRange: "$$",
+    hours: "Mon–Thu & Sun 11am–11pm, Fri–Sat 11am–12am",
+    phone: "(718) 478-8700"
+  },
+  {
+    id: 28,
+    order: 15,
+    icon: "🥔",
+    name: "Urubamba",
+    tagline: "NYC's oldest Peruvian restaurant, still going strong since 1976",
+    description: "Open since 1976, Urubamba is the oldest family-run Peruvian restaurant in New York City. The pollo a la brasa is the anchor — slow-roasted over charcoal with Peruvian spices — but the ceviche, lomo saltado, and weekend chicha morada are all essential. A living piece of Queens food history.",
+    cuisine: "Peruvian",
+    address: "86-20 37th Ave, Jackson Heights, Queens, NY 11372",
+    coordinates: [40.7501019, -73.8797895],
+    category: "savory",
+    mustTry: "Pollo a la brasa, ceviche",
+    priceRange: "$$",
+    hours: "Mon–Fri 12pm–10pm, Sat–Sun 9:30am–10pm",
+    phone: "(718) 672-2224"
+  },
+  {
+    id: 20,
+    order: 16,
     icon: "🥡",
     name: "Taiwanese Gourmet",
     tagline: "Cash-only Taiwanese street food hiding in plain sight in Elmhurst",
@@ -221,7 +253,7 @@ const PLACES = [
   },
   {
     id: 22,
-    order: 15,
+    order: 17,
     icon: "🦐",
     name: "Mariscos El Submarino",
     tagline: "Fresh Mexican seafood in the heart of Jackson Heights",
@@ -237,7 +269,7 @@ const PLACES = [
   },
   {
     id: 9,
-    order: 16,
+    order: 18,
     icon: "🍋",
     name: "Benfaremo — The Lemon Ice King of Corona",
     tagline: "A Queens legend, one scoop at a time since 1944",
@@ -253,7 +285,7 @@ const PLACES = [
   },
   {
     id: 12,
-    order: 17,
+    order: 19,
     icon: "🌶️",
     name: "Mountain House Flushing",
     tagline: "Bold Sichuan and Hunan flavors in the heart of Flushing",
@@ -268,7 +300,7 @@ const PLACES = [
   },
   {
     id: 15,
-    order: 18,
+    order: 20,
     icon: "🥟",
     name: "Nan Xiang Xiao Long Bao",
     tagline: "Flushing's gold standard for soup dumplings",
@@ -283,7 +315,7 @@ const PLACES = [
   },
   {
     id: 3,
-    order: 19,
+    order: 21,
     icon: "🔥",
     name: "White Bear",
     tagline: "Cult-favorite wontons in Flushing's back streets",
@@ -299,7 +331,7 @@ const PLACES = [
   },
   {
     id: 11,
-    order: 20,
+    order: 22,
     icon: "🥟",
     name: "Handmade Dumpling",
     tagline: "No-frills Flushing dumplings, made fresh all day",
@@ -313,7 +345,7 @@ const PLACES = [
   },
   {
     id: 13,
-    order: 21,
+    order: 23,
     icon: "🫘",
     name: "Soy Bean Chen Flower",
     tagline: "Silky tofu flower from a Flushing institution",
@@ -328,7 +360,7 @@ const PLACES = [
   },
   {
     id: 14,
-    order: 22,
+    order: 24,
     icon: "🍚",
     name: "Joe's Steam Rice Roll",
     tagline: "Silky cheung fun made to order in Flushing",
@@ -343,7 +375,7 @@ const PLACES = [
   },
   {
     id: 8,
-    order: 23,
+    order: 25,
     icon: "🏮",
     name: "New World Mall Food Court",
     tagline: "A whole world of Chinese regional food underground",
@@ -359,7 +391,7 @@ const PLACES = [
   },
   {
     id: 24,
-    order: 24,
+    order: 26,
     icon: "🥢",
     name: "Hahm Ji Bach",
     tagline: "Legendary Korean comfort food, open nearly round the clock",
@@ -375,7 +407,7 @@ const PLACES = [
   },
   {
     id: 25,
-    order: 25,
+    order: 27,
     icon: "🥩",
     name: "Jongro BBQ",
     tagline: "Full Korean BBQ in Flushing's Murray Hill",
@@ -391,7 +423,7 @@ const PLACES = [
   },
   {
     id: 10,
-    order: 26,
+    order: 28,
     icon: "🍺",
     name: "Bohemian Hall & Beer Garden",
     tagline: "NYC's oldest beer garden, still going strong in Astoria",
