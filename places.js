@@ -81,7 +81,7 @@ const PLACES = [
   {
     id: 26,
     order: 6,
-    icon: "🧆",
+    icon: "🥣",
     name: "Tong",
     tagline: "Bangladeshi street snacks on a Jackson Heights corner",
     description: "What started as a tiny street cart in 2018, Tong brought the flavors of Dhaka's street food scene to Jackson Heights. Fuchka — crispy hollow puri filled with spiced tamarind water — chotpoti, jhaal muri, and pitha are all made to order. It's the kind of snacking that's impossible to stop at just one.",
@@ -128,7 +128,7 @@ const PLACES = [
   {
     id: 23,
     order: 9,
-    icon: "🥗",
+    icon: "🐟",
     name: "Zaab Zaab",
     tagline: "Michelin-listed Isan Thai — fiery, funky, and electric",
     description: "One of the most exciting Thai restaurants in New York, Zaab Zaab specializes in the bold, fermented flavors of northeastern Thailand's Isan region. The larb is funky and herbaceous, the papaya salad has real heat, and the grilled meats arrive with sticky rice and house-made jeow dipping sauces.",
@@ -174,7 +174,7 @@ const PLACES = [
   {
     id: 19,
     order: 12,
-    icon: "🌿",
+    icon: "🍜",
     name: "Ayada Thai",
     tagline: "Elmhurst's Thai gem — bold, fragrant, and deeply authentic",
     description: "Ayada has earned a devoted following for its fiercely authentic Thai cooking in a no-frills Elmhurst dining room. The curries are complex and aromatic, the papaya salad bites back, and the pad see ew is among the best in the city. A worthy rival to anything in Bangkok.",
@@ -238,7 +238,7 @@ const PLACES = [
   {
     id: 20,
     order: 16,
-    icon: "🥡",
+    icon: "🐷",
     name: "Taiwanese Gourmet",
     tagline: "Cash-only Taiwanese street food hiding in plain sight in Elmhurst",
     description: "A cash-only, no-frills counter in Elmhurst serving deeply authentic Taiwanese street food — braised pork rice, scallion pancakes, three-cup chicken, and offal dishes that reward the adventurous. Known locally as 老華西街 (Old Huaxi Street), it's a rare find outside of Taipei.",
@@ -392,7 +392,7 @@ const PLACES = [
   {
     id: 24,
     order: 26,
-    icon: "🥢",
+    icon: "🌭",
     name: "Hahm Ji Bach",
     tagline: "Legendary Korean comfort food, open nearly round the clock",
     description: "A Flushing institution beloved for soondae (blood sausage), gopchang (grilled intestines), and deeply satisfying Korean comfort dishes. The hours are almost comically generous — open 24 hours most of the week — and the late-night crowd is as much a part of the experience as the food.",
