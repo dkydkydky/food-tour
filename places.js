@@ -222,7 +222,7 @@ const PLACES = [
   {
     id: 28,
     order: 15,
-    icon: "🥔",
+    icon: "🍗",
     name: "Urubamba",
     tagline: "NYC's oldest Peruvian restaurant, still going strong since 1976",
     description: "Open since 1976, Urubamba is the oldest family-run Peruvian restaurant in New York City. The pollo a la brasa is the anchor — slow-roasted over charcoal with Peruvian spices — but the ceviche, lomo saltado, and weekend chicha morada are all essential. A living piece of Queens food history.",
