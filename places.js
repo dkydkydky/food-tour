@@ -15,8 +15,23 @@ const PLACES = [
     photo: "https://images.ctfassets.net/1aemqu6a6t65/4X7TtXV68rQ52O5TaL9rcR/d7099aab9266d72a2479babe7d7a37f8/Bolivian-Llama-Party-Sunnyside-Queens-NYC-Photo-VincentTullo-255.jpg?w=1200&h=800&q=75"
   },
   {
-    id: 1,
+    id: 17,
     order: 2,
+    icon: "🍗",
+    name: "Jollibee",
+    tagline: "The Filipino fast food giant, right in the heart of Little Manila",
+    description: "The Woodside outpost of the beloved Filipino chain sits squarely in Little Manila, one of the most significant Filipino communities in the US. Chickenjoy — the signature crispy fried chicken — has a cult following that spans continents, and the sweet-style spaghetti is a rite of passage.",
+    cuisine: "Filipino",
+    address: "62-29 Roosevelt Ave, Woodside, Queens, NY 11377",
+    coordinates: [40.7461, -73.9012],
+    category: "savory",
+    mustTry: "Chickenjoy fried chicken",
+    priceRange: "$",
+    hours: "Daily 8am–11pm"
+  },
+  {
+    id: 1,
+    order: 3,
     icon: "🍜",
     name: "Sripraphai Thai Restaurant",
     tagline: "Queens' most beloved Thai kitchen",
@@ -34,7 +49,7 @@ const PLACES = [
   },
   {
     id: 7,
-    order: 3,
+    order: 4,
     icon: "🍖",
     name: "Ihawan",
     tagline: "Filipino BBQ and the smell of charcoal in Woodside",
@@ -50,7 +65,7 @@ const PLACES = [
   },
   {
     id: 2,
-    order: 4,
+    order: 5,
     icon: "🥟",
     name: "Phayul",
     tagline: "Jackson Heights' go-to Tibetan kitchen",
@@ -66,7 +81,7 @@ const PLACES = [
   },
   {
     id: 5,
-    order: 5,
+    order: 6,
     icon: "🍛",
     name: "Angel Indian",
     tagline: "Deep, spice-forward Indian cooking in Jackson Heights",
@@ -81,7 +96,7 @@ const PLACES = [
   },
   {
     id: 6,
-    order: 6,
+    order: 7,
     icon: "🌮",
     name: "Birria-Landia Food Truck",
     tagline: "The taco truck that made birria a New York obsession",
@@ -96,7 +111,7 @@ const PLACES = [
   },
   {
     id: 16,
-    order: 7,
+    order: 8,
     icon: "🌽",
     name: "The Arepa Lady",
     tagline: "The legendary street cart that became a Queens institution",
@@ -111,7 +126,7 @@ const PLACES = [
   },
   {
     id: 9,
-    order: 8,
+    order: 9,
     icon: "🍋",
     name: "Benfaremo — The Lemon Ice King of Corona",
     tagline: "A Queens legend, one scoop at a time since 1944",
@@ -127,7 +142,7 @@ const PLACES = [
   },
   {
     id: 12,
-    order: 9,
+    order: 10,
     icon: "🌶️",
     name: "Mountain House Flushing",
     tagline: "Bold Sichuan and Hunan flavors in the heart of Flushing",
@@ -142,7 +157,7 @@ const PLACES = [
   },
   {
     id: 15,
-    order: 10,
+    order: 11,
     icon: "🥟",
     name: "Nan Xiang Xiao Long Bao",
     tagline: "Flushing's gold standard for soup dumplings",
@@ -157,7 +172,7 @@ const PLACES = [
   },
   {
     id: 3,
-    order: 11,
+    order: 12,
     icon: "🔥",
     name: "White Bear",
     tagline: "Cult-favorite wontons in Flushing's back streets",
@@ -173,7 +188,7 @@ const PLACES = [
   },
   {
     id: 11,
-    order: 12,
+    order: 13,
     icon: "🥟",
     name: "Handmade Dumpling",
     tagline: "No-frills Flushing dumplings, made fresh all day",
@@ -187,7 +202,7 @@ const PLACES = [
   },
   {
     id: 13,
-    order: 13,
+    order: 14,
     icon: "🫘",
     name: "Soy Bean Chen Flower",
     tagline: "Silky tofu flower from a Flushing institution",
@@ -202,7 +217,7 @@ const PLACES = [
   },
   {
     id: 14,
-    order: 14,
+    order: 15,
     icon: "🍚",
     name: "Joe's Steam Rice Roll",
     tagline: "Silky cheung fun made to order in Flushing",
@@ -217,7 +232,7 @@ const PLACES = [
   },
   {
     id: 8,
-    order: 15,
+    order: 16,
     icon: "🏮",
     name: "New World Mall Food Court",
     tagline: "A whole world of Chinese regional food underground",
@@ -233,7 +248,7 @@ const PLACES = [
   },
   {
     id: 10,
-    order: 16,
+    order: 17,
     icon: "🍺",
     name: "Bohemian Hall & Beer Garden",
     tagline: "NYC's oldest beer garden, still going strong in Astoria",
